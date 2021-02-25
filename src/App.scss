@@ -1,0 +1,49 @@
+@import "./components/common.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+}
+@media (max-width: $breakpointMobile) {
+  .form {
+    width: 90vw;
+  }
+}
+@media (min-width: $breakpointTablet) {
+  .form {
+    width: 70vw;
+  }
+}
+@media (min-width: $breakpointDesktop) {
+  .form {
+    width: 60vw;
+  }
+}
+
+.wrap-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form {
+  max-width: 880px;
+  display: flex;
+  flex-direction: column;
+  border-radius: $borderRadius;
+  border: 0.5px solid $darkGray;
+  box-shadow: 1px 1px 2px $lightGray;
+  padding: $spacing * 2;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.topics > p {
+  margin-left: 18px;
+}

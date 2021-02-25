@@ -1,0 +1,32 @@
+@import "../common.scss";
+
+.button {
+  min-width: 140px;
+  color: $white;
+  background-color: $blue;
+  border: none;
+  border-radius: $borderRadius;
+  padding: 8px;
+  font-size: 0.875rem;
+}
+
+.button:not(:disabled):hover {
+  opacity: 90%;
+  cursor: pointer;
+}
+
+.button:active {
+  background-color: $navyBlue;
+  box-shadow: none;
+}
+
+.button:disabled {
+  background-color: $lightGray;
+  color: $darkGray;
+}
+
+.button:focus {
+  border: none;
+  outline: none;
+  box-shadow: 0 0 2px 2px $lightBlue;
+}

@@ -1,0 +1,55 @@
+$red: #b70808;
+$white: #fafafa;
+$blue: #2579e2;
+$lightBlue: #98c6fa;
+$navyBlue: #093799;
+$lightGray: #ececec;
+$darkGray: #909090;
+$darkerGray: #646464;
+$spacing: 6px;
+$fieldPadding: 4px;
+$borderRadius: 4px;
+
+$breakpointMobile: 550px;
+$breakpointTablet: 768px;
+$breakpointDesktop: 1280px;
+
+.field-container {
+  max-width: 90%;
+  position: relative;
+  margin: 12px;
+  margin-right: auto;
+}
+
+.label-wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 2px 4px $lightBlue;
+}
+
+.error-speech-bubble {
+  position: relative;
+  max-width: 30em;
+  color: $white;
+  background-color: $red;
+  padding: $fieldPadding;
+  font-size: 0.775rem;
+  border-radius: $borderRadius;
+}
+
+.error-speech-bubble::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 70%;
+  right: 1.5em;
+  border: 0.75rem solid transparent;
+  border-top: none;
+  border-bottom-color: $red;
+}

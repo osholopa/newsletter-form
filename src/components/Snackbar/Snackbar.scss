@@ -1,0 +1,58 @@
+@import "../common.scss";
+
+$closebuttonSize: 20px;
+
+.close-btn {
+  cursor: pointer;
+  width: $closebuttonSize;
+  height: $closebuttonSize;
+  background-color: transparent;
+  position: absolute;
+  top: 0.575rem;
+  right: 0.875rem;
+  border-radius: 6px;
+  margin-left: auto;
+}
+
+.close-btn:hover {
+  opacity: 90%;
+}
+
+.close-btn:before,
+.close-btn:after {
+  content: "";
+  position: absolute;
+  width: $closebuttonSize * 0.9;
+  height: 0.08 * $closebuttonSize;
+  background-color: $darkGray;
+  border-radius: 2px;
+  top: 0.4 * $closebuttonSize;
+}
+
+.close-btn:before:hover,
+.close-btn:after:hover {
+  background-color: $lightGray;
+}
+
+.close-btn:before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+  left: 0.05 * $closebuttonSize;
+}
+.close-btn:after {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  right: 0.05 * $closebuttonSize;
+}
+
+.snackbar {
+  width: 50vw;
+  position: fixed;
+  bottom: 20px;
+  padding: 1rem;
+  border-radius: 5px;
+  border-left-width: 4px !important;
+  font-size: 0.875rem;
+}

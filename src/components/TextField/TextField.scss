@@ -1,0 +1,27 @@
+@import "../common.scss";
+
+.text-input {
+  padding: 0.5rem;
+  border-radius: $borderRadius;
+  margin-left: auto;
+  color: #3f3f3f;
+  font-size: 0.875rem;
+  max-width: 100%;
+}
+
+.text-input:hover {
+  border-color: $darkerGray !important;
+}
+
+.text-input:not(:disabled):active {
+  border-color: $blue !important;
+}
+
+.text-input:disabled {
+  background-color: $lightGray;
+}
+
+.error-speech-bubble-textfield {
+  top: -4px;
+  right: -25px;
+}
