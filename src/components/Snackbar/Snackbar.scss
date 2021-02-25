@@ -2,13 +2,24 @@
 
 $closebuttonSize: 20px;
 
+.snackbar {
+  width: 50vw;
+  position: fixed;
+  bottom: 20px;
+  padding: 1.2rem;
+  border-radius: 5px;
+  border-left-width: 4px !important;
+  font-size: 0.875rem;
+  box-shadow: 0 0 8px 4px #f0f0f050;
+}
+
 .close-btn {
   cursor: pointer;
   width: $closebuttonSize;
   height: $closebuttonSize;
   background-color: transparent;
   position: absolute;
-  top: 0.575rem;
+  top: 0.475rem;
   right: 0.875rem;
   border-radius: 6px;
   margin-left: auto;
@@ -45,14 +56,4 @@ $closebuttonSize: 20px;
   -moz-transform: rotate(-45deg);
   transform: rotate(-45deg);
   right: 0.05 * $closebuttonSize;
-}
-
-.snackbar {
-  width: 50vw;
-  position: fixed;
-  bottom: 20px;
-  padding: 1rem;
-  border-radius: 5px;
-  border-left-width: 4px !important;
-  font-size: 0.875rem;
 }

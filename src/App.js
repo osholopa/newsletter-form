@@ -10,7 +10,7 @@ function App() {
   const { register, handleSubmit, errors } = useForm();
   const [notification, setNotification] = useState({
     type: "info",
-    message: "Please fill all fields and submit the form",
+    message: "Please fill in all fields and submit the form",
   });
 
   const topics = ["General newsletter", "Our products", "Partner products"];
@@ -85,8 +85,8 @@ function App() {
           />
           <TextField
             disabled
-            placeholder="Disabled input"      
-            label="Disabled input"  
+            placeholder="Disabled input"
+            label="Disabled input"
           />
         </div>
         <div className="topics">

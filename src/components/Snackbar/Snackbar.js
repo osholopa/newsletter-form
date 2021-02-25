@@ -6,27 +6,27 @@ const Snackbar = ({ type, message, setNotification }) => {
   switch (type) {
     case "error":
       messageStyle = {
-        border: "1px solid #8c161a",
-        backgroundColor: "#fdf2f2",
+        border: "1px solid #bf0100",
+        backgroundColor: "#fff3f2",
       };
       break;
-    case "info":
+    case "success":
+      messageStyle = {
+        border: "1px solid #129939",
+        backgroundColor: "#e9fff0",
+      };
+      break;
+    default:
       messageStyle = {
         border: "1px solid #3b86d1",
         backgroundColor: "#e6f2ff",
       };
       break;
-    default:
-      messageStyle = {
-        border: "1px solid #129939",
-        backgroundColor: "#dcf7e2",
-      };
-      break;
   }
 
   const handleClose = () => {
-    setNotification(null)
-  }
+    setNotification(null);
+  };
 
   return (
     <div style={messageStyle} className="snackbar">

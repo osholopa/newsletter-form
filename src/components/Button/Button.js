@@ -3,7 +3,7 @@ import "./Button.scss";
 
 const Button = ({ type = "button", disabled, text }) => {
   return (
-    <div className="field-container">
+    
       <button
         aria-disabled={disabled}
         className="button"
@@ -12,7 +12,7 @@ const Button = ({ type = "button", disabled, text }) => {
       >
         {text}
       </button>
-    </div>
+   
   );
 };
 

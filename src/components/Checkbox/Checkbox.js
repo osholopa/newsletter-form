@@ -7,7 +7,7 @@ const Checkbox = ({ label, error, name, id, inputRef, required, ...props }) => {
       <div className="label-wrapper">
         <input
           aria-label={label}
-          aria-required={true}
+          aria-required={required}
           id={id}
           name={name}
           type="checkbox"

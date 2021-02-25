@@ -1,10 +1,10 @@
-$red: #b70808;
+$red: #bf0100;
 $white: #fafafa;
-$blue: #2579e2;
-$lightBlue: #98c6fa;
-$navyBlue: #093799;
-$lightGray: #ececec;
-$darkGray: #909090;
+$blue: #006fdd;
+$lightBlue: #aed6ff;
+$navyBlue: #0055aa;
+$lightGray: #f0f0f0;
+$darkGray: #aeaeae;
 $darkerGray: #646464;
 $spacing: 6px;
 $fieldPadding: 4px;
@@ -19,6 +19,12 @@ $breakpointDesktop: 1280px;
   position: relative;
   margin: 12px;
   margin-right: auto;
+}
+
+@media (max-width: $breakpointMobile) {
+  .field-container {
+    width: 100%;
+  }
 }
 
 .label-wrapper {
@@ -47,9 +53,9 @@ input:focus {
   position: absolute;
   width: 0;
   height: 0;
-  bottom: 70%;
+  bottom: 100%;
   right: 1.5em;
-  border: 0.75rem solid transparent;
+  border: 0.25rem solid transparent;
   border-top: none;
   border-bottom-color: $red;
 }

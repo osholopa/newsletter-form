@@ -11,7 +11,7 @@
 
 Here are the instructions to get the local development environment up and running. The instructions are for Windows but the steps for other environments should be similar.
 
-## 1. Clone the repository
+## Cloning the repository
 1. Ensure [Git](https://git-scm.com/downloads) and [Node.js](https://nodejs.org/en/) are installed.
 2. Open Git Bash in the directory where you want the project to be saved.
 3. Clone this repository with `git clone` using either HTTPS or SSH

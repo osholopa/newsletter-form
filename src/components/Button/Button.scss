@@ -8,6 +8,7 @@
   border-radius: $borderRadius;
   padding: 8px;
   font-size: 0.875rem;
+  margin: 0 $spacing;
 }
 
 .button:not(:disabled):hover {

@@ -15,7 +15,7 @@ const TextField = ({
     <div className="field-container">
       <div className="label-wrapper">
         <input
-          aria-required={true}
+          aria-required={required}
           aria-label={label}
           placeholder={`${placeholder}${required ? '*' : ''}`}
           style={
