@@ -24,7 +24,7 @@
 }
 
 [type="checkbox"]:hover {
-  opacity: 90%;
+  opacity: $hoverOpacity;
   cursor: pointer;
 }
 

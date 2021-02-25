@@ -26,7 +26,7 @@ $closebuttonSize: 20px;
 }
 
 .close-btn:hover {
-  opacity: 90%;
+  opacity: $hoverOpacity;
 }
 
 .close-btn:before,
